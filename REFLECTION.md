@@ -24,3 +24,4 @@ Here is a sample entry (delete this line; also: feel free to copy/paste/modify):
 1. I have created the shapes necessary for the game using the rectangle class and implemented keyboard controls for the arrow keys. I have also implemented a level counter th
 at increments and increases speed by a small percentenge each time the level increases.
 2. I have encountered many issues, with the most pressing being the method length limit for checkstyle. I had to figure out how to create the last shape without it messing upthe entire program. I did not have time to implement a new game button, so I understand I will lose points for such small things.
+2. No extra credit.
