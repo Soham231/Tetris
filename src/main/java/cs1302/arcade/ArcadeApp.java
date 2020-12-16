@@ -56,7 +56,7 @@ public class ArcadeApp extends Application {
     public Scene mainMenu() {
         button = new Button("Start Game");
         Button controls = new Button("Controls");
-        ImageView iv = new ImageView(new Image("https://static.wikia.nocookie.net/nintendo/images/4/46/Tetris_logo.png/revision/latest?cb=20191220154645&path-prefix=en"));
+        ImageView iv = new ImageView(new Image("file:src/main/resources/Tetris_logo.png"));
         iv.setFitWidth(305);
         iv.setTranslateX(80);
         iv.setTranslateY(0);
