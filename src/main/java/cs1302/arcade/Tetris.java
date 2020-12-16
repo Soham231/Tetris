@@ -1,72 +1,82 @@
 package cs1302.arcade;
 
-import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.paint.Color;
 
+/** Represents a Tetris block. */
 public class Tetris {
-    
-    Color color;
-    private String name;
+    Color shade;
     Rectangle one;
     Rectangle two;
     Rectangle three;
     Rectangle four;
-    public int position = 1;
+    int variable = 1;
+    private String label;
 
-
-    public Tetris(Rectangle one, Rectangle two, Rectangle three, Rectangle four) {
+    /**
+     * Represents a tetris block.
+     *
+     * @param one The specified rectangle block
+     * @param two The specified rectangle block
+     * @param three The specified rectangle block
+     * @param four The specified rectangle block
+     * @param s the name of the block
+     */
+    public Tetris(Rectangle one, Rectangle two, Rectangle three, Rectangle four, String s) {
         this.one = one;
         this.two = two;
         this.three = three;
         this.four = four;
-    } //position
+        this.label = s;
 
-    public Tetris(Rectangle one, Rectangle two, Rectangle three, Rectangle four, String name) {
-        this.one = one;
-        this.two = two;
-        this.three = three;
-        this.four = four;
-        this.name = name;
-
-        switch (name) {
-            case "i": 
-                color = Color.SEAGREEN;
-                break;
-            case "z":
-                color = Color.PALEGOLDENROD;
-                break;
-            case "t":
-                color = Color.MEDIUMVIOLETRED;
-                break;
-            case "s":
-                color = Color.LAWNGREEN;
-                break;
-            case "o":
-                color = Color.DEEPSKYBLUE;
-                break;
-            case "l":
-                color = Color.LIGHTPINK;
-                break;
-            case "j":
-                color = Color.ROSYBROWN;
-                break;
+        //Assigns colors to all cases of the tetris blocks
+        switch (s) {
+        case "h":
+            shade = Color.LIGHTYELLOW;
+            break;
+        case "g":
+            shade = Color.DARKCYAN;
+            break;
+        case "o":
+            shade = Color.PALEVIOLETRED; //
+            break;
+        case "k":
+            shade = Color.DARKORANGE;//
+            break;
+        case "c":
+            shade = Color.DEEPSKYBLUE; //
+            break;
+        case "z":
+            shade = Color.PURPLE;
+            break;
+        case "d":
+            shade = Color.SADDLEBROWN;
+            break;
         } //switch
-        this.one.setFill(color);
-        this.two.setFill(color);
-        this.three.setFill(color);
-        this.four.setFill(color);
-    } //position
+        this.one.setFill(shade);
+        this.two.setFill(shade);
+        this.three.setFill(shade);
+        this.four.setFill(shade);
+    } //Tetris constructor
 
-    public void changePosition() {
-        if (position != 4) {
-            position++;
-        } else {
-            position = 1;
-        } //if
-    } //changeposition
 
+    /**
+     * Returns the name of the block.
+     *
+     * @return label of the block
+     */
     public String getName() {
-        return name;
+        return label;
     } //getName
 
-} //position
+    /**
+     * Changes the orientation of the block, depending on user keypress.
+     */
+    public void changeForm() {
+        if (variable != 4) {
+            variable++;
+        } else {
+            variable = 1;
+        } //if
+    } //changeForm
+} //Tetris
