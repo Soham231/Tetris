@@ -18,3 +18,7 @@ Here is a sample entry (delete this line; also: feel free to copy/paste/modify):
 1. I have created a seperate Tetris class that handles the functionality of some of the block. Also have created the main instance variables that I will use.
 2. I plan to complete the rest of the design before the next deadline and implement the keyboard controls and main menu
 3. I just have had to figure out how to use the rectangle class which took me a long time to figure out. Nothing major yet, however.
+
+## Deadline 3 - WED 2020-12-16 (Dec 16)
+
+1. I have created the shapes necessary for the game using the rectangle class and implemented keyboard controls for the arrow keys. I have also implemented a level counter that increments and increases speed by a small percentenge each time the level increases.
