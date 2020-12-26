@@ -1,4 +1,4 @@
-package cs1302.arcade;
+package tetris.arcade;
 
 import javafx.application.Application;
 
